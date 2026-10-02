@@ -53,5 +53,16 @@
       window.open(base + encodeURIComponent(text), '_blank', 'noopener');
     }));
   </script>
+  <style>
+    /* Product imagery: one original catalog sheet, cropped per product card. */
+    .product .symbol { width:100%; height:150px; border-radius:0; background-image:url('mahakal-catalog-small.jpg'); background-size:300% 200%; background-repeat:no-repeat; color:transparent; }
+    .product:nth-child(1) .symbol { background-position:0% 0%; }
+    .product:nth-child(2) .symbol { background-position:50% 0%; }
+    .product:nth-child(3) .symbol { background-position:100% 0%; }
+    .product:nth-child(4) .symbol { background-position:100% 0%; }
+    .product:nth-child(5) .symbol { background-position:0% 100%; }
+    .product:nth-child(6) .symbol { background-position:50% 100%; }
+    @media(max-width:720px){.product .symbol{height:130px}}
+  </style>
 </body>
 </html>
